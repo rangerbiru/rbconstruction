@@ -1,0 +1,302 @@
+:root {
+    --color-secondary: #feb900;
+    --bg-web: #f5f6f7;
+    --color-text: #52565e;
+}
+
+/* Khusus Linux */
+*{
+    font-family: "Roboto", sans-serif;
+}
+
+section {
+    padding: 100px 0;
+}
+
+#home {
+    padding: 0;
+}
+
+/* header */
+.titik {
+    color: var(--color-secondary);
+}
+.header-padding {
+    padding: 25px 150px;
+    position: absolute;
+    width: 100%;
+    z-index: 50;
+}
+
+.nav-dropdown {
+    display: flex;
+    align-items: center;
+}
+
+.icon-dropdown {
+    font-size: 12px;
+    color: #fff;
+}
+
+.nav-item a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: var(--color-secondary);
+    transition: width .3s;
+}
+
+.nav-item a:hover::after {
+    width: 100%;
+}
+
+.nav-item a.active::after {
+    visibility: visible;
+    width: 100%;
+}
+
+/* Home Section */
+
+.carousel-item::after {
+    content:"";
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background:rgba(0,0,0,0.6);
+}
+
+.text-tengah {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.text-home {
+    font-size: 56px;
+    font-weight: 600;
+}
+
+/* Ini untuk garis pada section home */
+.text-home::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100px;
+    height: 4px;
+    background-color: var(--color-secondary);
+    margin: auto;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.btn-started {
+    /* background-color: var(--color-secondary); */
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 40px;
+    border: 2px solid var(--color-secondary);
+    border-radius: 50px;
+    transition: .3s all ease-in;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.btn-started:hover {
+    background-color: var(--color-secondary);
+    color: #fff;
+}
+
+/* Section Form */
+/* Garis bawah section form */
+.text-form::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 4px;
+    background-color: var(--color-secondary);
+    margin: 20px 0;
+}
+
+.card-form {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.custom-textarea {
+    resize: none;
+}
+
+/* Section Construction */
+.text-construction::before {
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 2px;
+    background-color: var(--color-secondary);
+    /* margin-bottom: 10px;
+    margin-right: 10px; */
+    position: relative;
+    bottom: 10px;
+    right: 10px;
+}
+
+.text-construction::after {
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 2px;
+    background-color: var(--color-secondary);
+    position: relative;
+    bottom: 10px;
+    left: 10px;
+}
+
+.card-box {
+    display: flex;
+    border: 1px solid #dcdcdc;
+    width: 700px;
+}
+
+.card-box img {
+    width: 270px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.text-card {
+    padding: 50px;
+}
+
+/* Section Services */
+.bg-web {
+    background-color: var(--bg-web);
+}
+
+.card-service {
+    padding: 40px;
+    height: 100%;
+    background-color: #fff;
+    text-decoration: none;
+    color: var(--color-text);
+    width: 30%;
+}
+
+.icon-service {
+    width: 50px;
+    height: 50px;
+    font-size: 50px;
+    z-index: 10;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.icon-service::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #f0f1f2;
+    border-radius: 50px;
+    top: 10px;
+    z-index: -1;
+    right: -25px;
+    transition: .3s;
+}
+
+.card-service:hover {
+    color: #52565e;
+}
+
+.card-service:hover .icon-service::before{
+    background-color: var(--color-secondary);
+}
+
+.card-service:hover .title-card-service {
+    border-color: var(--color-secondary);
+}
+
+.title-card-service {
+    border-bottom: 4px solid #f0f1f2;
+    display: inline-block;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    font-size: 22px;
+}
+
+.text-card-service {
+    font-size: 14px;
+}
+
+.text-learn-service {
+    color: var(--color-secondary);
+    letter-spacing: .5px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-size: 18px;
+}
+
+/* Section Service Tab */
+
+.btn {
+    border: none;
+    border-radius: 0 !important;
+}
+
+.btn-link {
+    color: var(--color-text) !important;
+    font-weight: 600 !important;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-size: 18px !important;
+    transition: .3s;
+}
+
+.btn-link:hover {
+    color: #feb900 !important;
+}
+
+.nav-item .btn-link.active {
+    border-bottom: 3px solid var(--color-secondary);
+}
+
+.title-tab::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background-color: var(--color-secondary);
+    margin: 20px 0;
+}
+
+/* Section Project */
+.project-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 25px;
+    font-size: 18px;
+}
+
+.list {
+    transition: .3s;
+}
+
+.list:hover {
+    color: var(--color-secondary);
+}
+
+.list-active {
+    color: var(--color-secondary);
+}
+
+/* .tab-list {
+    flex-direction: row;
+    display: flex;
+    gap: 24px;
+
+} */
+

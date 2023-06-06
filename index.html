@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Construction | Bootstrap Site</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+        integrity="sha512-ZnR2wlLbSbr8/c9AgLg3jQPAattCUImNsae6NHYnS9KrIwRdcY9DxFotXhNAKIKbAXlRnujIqUWoXXwqyFOeIQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header-padding">
+        <nav class="navbar navbar-expand-lg bg-transparent">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-semibold text-white" href="#">RbConstruction<span class="titik">.</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto gap-2">
+                        <li class="nav-item ">
+                            <a class="nav-link active text-uppercase text-white" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase text-white" href="#form">Form</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase text-white" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase text-white" href="#">Project</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase text-white" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item dropdown nav-dropdown">
+                            <a class="nav-link text-uppercase text-white" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <i class="bi bi-chevron-down icon-dropdown"></i>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase text-white" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- End Header -->
+
+    <!-- Section Home -->
+    <section id="home">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner" style="max-height: 100vh;">
+                <div class="carousel-item active">
+                    <img src="https://bootstrapmade.com/demo/templates/UpConstruction/assets/img/hero-carousel/hero-carousel-1.jpg"
+                        class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://bootstrapmade.com/demo/templates/UpConstruction/assets/img/hero-carousel/hero-carousel-2.jpg"
+                        class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://bootstrapmade.com/demo/templates/UpConstruction/assets/img/hero-carousel/hero-carousel-3.jpg"
+                        class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://bootstrapmade.com/demo/templates/UpConstruction/assets/img/hero-carousel/hero-carousel-4.jpg"
+                        class="d-block w-100">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="text-tengah d-flex flex-column align-items-center">
+            <h1 class="text-white text-home text-center" data-aos="zoom-in" data-aos-duration="1000">Welcome To <br>
+                RBConstruction</h1>
+            <p class="text-white text-center fs-5 mt-3" data-aos="fade-right" data-aos-duration="1000"
+                data-aos-delay="500">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas,
+                alias
+                nesciunt tenetur vel obcaecati accusamus consequuntur ratione doloribus, quos ducimus, deleniti sit
+                distinctio fugiat? Repudiandae deleniti veniam mollitia earum incidunt?</p>
+
+            <a href="#" class="btn-started">Get
+                Started</a>
+        </div>
+    </section>
+
+    <!-- Section Form -->
+    <section id="form">
+        <div class="container d-flex">
+            <!-- Bagian Kiri -->
+            <div class="col-md-6 d-flex flex-column align-items-center justify-content-center">
+                <h1 class="fw-bold text-form">Minus hic non reiciendis ea possimus at quia.</h1>
+                <p>Rem id rerum. Debitis deserunt quidem delectus expedita ducimus dolor. Aut iusto ipsa. Eos ipsum
+                    nobis ipsa soluta itaque perspiciatis fuga ipsum perspiciatis. Eum amet fugiat totam nisi possimus
+                    ut delectus dicta. <br> <br>
+                    Aliquam velit deserunt autem. Inventore et saepe. Tenetur suscipit eligendi labore culpa eos.
+                    Deserunt porro magni qui necessitatibus dolorem at animi cupiditate.</p>
+            </div>
+            <!-- Bagian Kanan -->
+            <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
+                <div class="card-form p-4">
+                    <h6 class="fw-bold">Get A Quote</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, suscipit.</p>
+
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="telp" class="form-label">Telepon</label>
+                            <input type="number" class="form-control" id="telp">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="msg" class="form-label">Pesan</label>
+                            <textarea id="pesan" class="form-control custom-textarea" rows="8"></textarea>
+                        </div>
+
+                        <div class="d-flex justify-content-center">
+                            <button type="submit" class="btn btn-warning text-white rounded-1">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Construction -->
+    <section id="construction">
+        <div class="text-center w-50 container mb-4">
+            <h2 class="text-construction fw-bold ">Constructions</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore cum labore fugiat vitae enim iure
+                nostrum eligendi voluptate, aperiam unde.</p>
+        </div>
+
+        <div class="card-construction d-flex flex-wrap gap-5 justify-content-center">
+            <div class="card-box">
+                <img src="https://bootstrapmade.com/demo/templates/UpConstruction/assets/img/constructions-1.jpg"
+                    alt="gambar card 1">
+                <div class="text-card">
+                    <h5 class="fw-bold">Eligendi omnis sunt veritatis.</h5>
+                    <p>Fuga in dolorum et iste et culpa. Commodi possimus nesciunt modi voluptatem placeat deleniti
+                        adipisci. Cum delectus doloribus non veritatis. Officia temporibus illo magnam. Dolor eos et.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card-box">
+                <img src="https://bootstrapmade.com/demo/templates/UpConstruction/assets/img/constructions-2.jpg"
+                    alt="gambar card 1">
+                <div class="text-card">
+                    <h5 class="fw-bold">Possimus ut sed velit assumenda</h5>
+                    <p>
+                        Sunt deserunt maiores voluptatem autem est rerum perferendis rerum blanditiis. Est laboriosam
+                        qui iste numquam laboriosam voluptatem architecto. Est laudantium sunt at quas aut hic. Eum
+                        dignissimos.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card-box">
+                <img src="https://bootstrapmade.com/demo/templates/UpConstruction/assets/img/constructions-3.jpg"
+                    alt="gambar card 1">
+                <div class="text-card">
+                    <h5 class="fw-bold">Error beatae dolor inventore aut</h5>
+                    <p>Dicta porro nobis. Velit cum in. Nesciunt dignissimos enim molestiae facilis numquam quae quaerat
+                        ipsam omnis. Neque debitis ipsum at architecto officia laboriosam odit. Ut sunt temporibus nulla
+                        culpa.</p>
+                </div>
+            </div>
+
+            <div class="card-box">
+                <img src="https://bootstrapmade.com/demo/templates/UpConstruction/assets/img/constructions-4.jpg"
+                    alt="gambar card 1">
+                <div class="text-card">
+                    <h5 class="fw-bold">Expedita voluptas ut ut nesciunt</h5>
+                    <p>Aut est quidem doloremque voluptatem magnam quis excepturi vero quia. Eum eos doloremque
+                        architecto illo at beatae dolore. Fugiat suscipit et sint ratione dolores. Aut aliquid ea
+                        dolores libero nobis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Services -->
+    <section id="services" class=" bg-web">
+        <div class="container">
+            <div class="text-center">
+                <div class="text-center container w-50 mb-4">
+                    <h2 class="text-construction fw-bold ">Services</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore cum labore fugiat vitae enim
+                        iure
+                        nostrum eligendi voluptate, aperiam unde.</p>
+                </div>
+            </div>
+
+            <div class="d-flex flex-wrap justify-content-center gap-3">
+                <a class="card-service position-relative" href="#" target="_blank">
+                    <div class="icon-service">
+                        <i class="bi bi-water"></i>
+                    </div>
+
+                    <h5 class="fw-bolder title-card-service">Lorem, ipsum dolor.</h5>
+                    <p class="text-card-service">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ab,
+                        blanditiis
+                        quaerat repellat
+                        fugiat expedita earum doloremque vero et asperiores!</p>
+
+                    <p class="text-learn-service">Learn More <i class="bi bi-arrow-right"></i></p>
+                </a>
+
+                <a class="card-service position-relative" href="#" target="_blank">
+                    <div class="icon-service">
+                        <i class="bi bi-water"></i>
+                    </div>
+
+                    <h5 class="fw-bolder title-card-service">Lorem, ipsum dolor.</h5>
+                    <p class="text-card-service">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ab,
+                        blanditiis
+                        quaerat repellat
+                        fugiat expedita earum doloremque vero et asperiores!</p>
+
+                    <p class="text-learn-service">Learn More <i class="bi bi-arrow-right"></i></p>
+                </a>
+
+                <a class="card-service position-relative" href="#" target="_blank">
+                    <div class="icon-service">
+                        <i class="bi bi-water"></i>
+                    </div>
+
+                    <h5 class="fw-bolder title-card-service">Lorem, ipsum dolor.</h5>
+                    <p class="text-card-service">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ab,
+                        blanditiis
+                        quaerat repellat
+                        fugiat expedita earum doloremque vero et asperiores!</p>
+
+                    <p class="text-learn-service">Learn More <i class="bi bi-arrow-right"></i></p>
+                </a>
+
+                <a class="card-service position-relative" href="#" target="_blank">
+                    <div class="icon-service">
+                        <i class="bi bi-water"></i>
+                    </div>
+
+                    <h5 class="fw-bolder title-card-service">Lorem, ipsum dolor.</h5>
+                    <p class="text-card-service">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ab,
+                        blanditiis
+                        quaerat repellat
+                        fugiat expedita earum doloremque vero et asperiores!</p>
+
+                    <p class="text-learn-service">Learn More <i class="bi bi-arrow-right"></i></p>
+                </a>
+
+                <a class="card-service position-relative" href="#" target="_blank">
+                    <div class="icon-service">
+                        <i class="bi bi-water"></i>
+                    </div>
+
+                    <h5 class="fw-bolder title-card-service">Lorem, ipsum dolor.</h5>
+                    <p class="text-card-service">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ab,
+                        blanditiis
+                        quaerat repellat
+                        fugiat expedita earum doloremque vero et asperiores!</p>
+
+                    <p class="text-learn-service">Learn More <i class="bi bi-arrow-right"></i></p>
+                </a>
+
+                <a class="card-service position-relative" href="#" target="_blank">
+                    <div class="icon-service">
+                        <i class="bi bi-water"></i>
+                    </div>
+
+                    <h5 class="fw-bolder title-card-service">Lorem, ipsum dolor.</h5>
+                    <p class="text-card-service">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ab,
+                        blanditiis
+                        quaerat repellat
+                        fugiat expedita earum doloremque vero et asperiores!</p>
+
+                    <p class="text-learn-service">Learn More <i class="bi bi-arrow-right"></i></p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="service-tabs" class="container">
+        <!-- Components Tab -->
+        <!-- <ul class="nav justify-content-center" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="nav-link active" aria-current="page" id="modisit" href="#" data-bs-toggle="tab"
+                    data-bs-target="#modisit">Modisit</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="praesenti" href="#" data-bs-toggle="tab"
+                    data-bs-target="#praesenti">Praesenti</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="explica" href="#" data-bs-toggle="tab" data-bs-target="#explica">Explica</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="nostrum" href="#" data-bs-toggle="tab" data-bs-target="#nostrum">Nostrum</a>
+            </li>
+        </ul>
+
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="modisit" role="tabpanel" aria-labelledby="tab1" tabindex="0">
+                tes1
+            </div>
+            <div class="tab-pane fade" id="praesenti" role="tabpanel" aria-labelledby="tab2" tabindex="0">
+                tes2</div>
+            <div class="tab-pane fade" id="explica" role="tabpanel" aria-labelledby="tab3" tabindex="0">
+                tes3</div>
+            <div class="tab-pane fade" id="nostrum" role="tabpanel" aria-labelledby="tab4" tabindex="0">
+                tes4</div>
+        </div> -->
+
+        <ul class="nav mb-3 justify-content-center w-100" id="pills-tab" role="tablist">
+            <li class="nav-item w-25" role="presentation">
+                <button class="nav-link btn btn-link active" id="pills-home-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                    aria-selected="true">Modisit</button>
+            </li>
+            <li class="nav-item w-25" role="presentation">
+                <button class="nav-link btn btn-link" id="pills-profile-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                    aria-selected="false">Praesenti</button>
+            </li>
+            <li class="nav-item w-25" role="presentation">
+                <button class="nav-link btn btn-link" id="pills-contact-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                    aria-selected="false">Explica</button>
+            </li>
+            <li class="nav-item w-25" role="presentation">
+                <button class="nav-link btn btn-link" id="pills-contact-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-nostrum" type="button" role="tab" aria-controls="pills-contact"
+                    aria-selected="false">Nostrum</button>
+            </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active py-5" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+                tabindex="0">
+                <div class="col-md-6">
+                    <h3 class="fw-bold title-tab">Voluptatem dignissimos provident</h3>
+                    <p><i>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe voluptatum fugit, repellendus
+                            nostrum quo velit sit atque suscipit deleniti eius!</i></p>
+
+
+                    <li class="list-unstyled"><i class="bi bi-check2-all text-warning"></i> Ullamco laboris nisi ut
+                        aliquip ex ea commodo consequat.</li>
+                    <li class="list-unstyled"><i class="bi bi-check2-all text-warning"></i> Duis aute irure dolor in
+                        reprehenderit in voluptate velit.</li>
+                    <li class="list-unstyled"><i class="bi bi-check2-all text-warning"></i> Ullamco laboris nisi ut
+                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta
+                        storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+
+                </div>
+                <div class="col-md-6">
+                    <img src="https://bootstrapmade.com/demo/templates/UpConstruction/assets/img/features-1.jpg"
+                        alt="tab">
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+                tabindex="0">tes2</div>
+            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
+                tabindex="0">tes3</div>
+            <div class="tab-pane fade" id="pills-nostrum" role="tabpanel" aria-labelledby="pills-nostrum-tab"
+                tabindex="0">tes4</div>
+        </div>
+
+    </section>
+
+    <section id="project">
+        <div class="d-flex flex-column align-items-center">
+            <div class="text-center container w-50 mb-4">
+                <h2 class="text-construction fw-bold ">Our Project</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore cum labore fugiat vitae enim
+                    iure
+                    nostrum eligendi voluptate, aperiam unde.</p>
+            </div>
+
+            <!-- Tabs Js -->
+            <ul class="project-list" role="button">
+                <li class="list list-active" data-filter="all">All</li>
+                <li class="list" data-filter="remodelling">Remodelling</li>
+                <li class="list" data-filter="construction">Construction</li>
+                <li class="list" data-filter="repairs">Repairs</li>
+                <li class="list" data-filter="design">Design</li>
+            </ul>
+
+            <div class="tab-list d-flex flex-wrap justify-content-center px-3 gap-3">
+                <div class="tab-box remodelling">
+                    <img src="https://bootstrapmade.com/demo/templates/UpConstruction/assets/img/features-1.jpg"
+                        alt="tab" width="400">
+                </div>
+                <div class="tab-box construction">
+                    <img src="https://bootstrapmade.com/demo/templates/UpConstruction/assets/img/features-2.jpg"
+                        alt="tab" width="400">
+                </div>
+                <div class="tab-box repairs">
+                    <img src="https://bootstrapmade.com/demo/templates/UpConstruction/assets/img/features-3.jpg"
+                        alt="tab" width="400">
+                </div>
+                <div class="tab-box design">
+                    <img src="https://bootstrapmade.com/demo/templates/UpConstruction/assets/img/features-4.jpg"
+                        alt="tab" width="400">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End Home -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: false
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js"
+        integrity="sha512-8Z5++K1rB3U+USaLKG6oO8uWWBhdYsM3hmdirnOEWp8h2B1aOikj5zBzlXs8QOrvY9OxEnD2QDkbSKKpfqcIWw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.list').click(function () {
+                const value = $(this).attr('data-filter')
+                if (value == 'all') {
+                    $('.tab-box').show('1000')
+                } else {
+                    $('.tab-box').not('.' + value).hide('1000');
+                    $('.tab-box').filter('.' + value).show('1000');
+                }
+            })
+
+            $('.list').click(function () {
+                $(this).addClass('list-active').siblings().removeClass('list-active');
+            })
+        })
+    </script>
+</body>
+
+</html>
